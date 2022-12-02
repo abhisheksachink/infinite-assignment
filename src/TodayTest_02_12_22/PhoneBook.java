@@ -88,11 +88,11 @@ public class PhoneBook {
         this.contactNumber = contactNumber;
     }
 
-    public String getAddress() {
+    public String getEmail() {
         return email;
     }
 
-    public void setAddress(String address) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
