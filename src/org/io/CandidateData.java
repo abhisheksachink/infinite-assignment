@@ -1,16 +1,27 @@
 package org.io;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class CandidateData implements Serializable {
     private String candId;
     private String name;
     private String course;
+    private Date dateOfJoining;
 
-    public CandidateData(String candId, String name, String course) {
+    public CandidateData(String candId, String name, String course ,Date dateOfJoining) {
         this.candId = candId;
         this.name = name;
         this.course = course;
+        this.dateOfJoining= dateOfJoining;
+    }
+
+    public Date getDateOfJoining() {
+        return dateOfJoining;
+    }
+
+    public void setDateOfJoining(Date dateOfJoining) {
+        this.dateOfJoining = dateOfJoining;
     }
 
     public String getCandId() {
@@ -42,7 +53,7 @@ public class CandidateData implements Serializable {
         return "CandidateData{" +
                 "candId=" + candId +
                 ", name='" + name + '\'' +
-                ", course='" + course + '\'' +
+                ", course='" + course + '\'' +", Date of Joining='" + dateOfJoining + '\''+
                 '}';
     }
 }
