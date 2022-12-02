@@ -10,7 +10,7 @@ import java.util.Scanner;
             Scanner sc = new Scanner(System.in);
             PhoneBook phone = new PhoneBook();
             PhoneBook allData = new PhoneBook();
-            System.out.println("Enter 5 for quit .....");
+
             try {
                 while (true) {
 
