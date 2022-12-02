@@ -17,7 +17,7 @@ import java.util.Scanner;
                     System.out.println("Select Choice ------");
                     System.out.println("1.Add Contact");
                     System.out.println("2.Delete Contact");
-                    System.out.println("3.Update Contact ");
+                    System.out.println("3.Update Contact ");![](../../../../../../ABHISH~1/AppData/Local/Temp/download.jpg)
                     System.out.println("4.Search Contact");
                     System.out.println("5.Display all Contacts");
                     System.out.println("6.Exit");
