@@ -19,6 +19,9 @@ public class Member {
         this.memberName = memberName;
         Address = address;
     }
+    public Member(){
+
+    }
 
     public int getMemberId() {
         return memberId;
