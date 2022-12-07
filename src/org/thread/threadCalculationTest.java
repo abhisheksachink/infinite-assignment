@@ -7,9 +7,7 @@ public class threadCalculationTest {
         new threadCalculation("SUBTRACT");
         new threadCalculation("MULTIPLY");
         try{
-
             Thread.sleep(1000);
-
         }
         catch(InterruptedException e){
             e.printStackTrace();
