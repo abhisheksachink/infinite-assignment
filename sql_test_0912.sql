@@ -102,7 +102,23 @@ select * from customer where grade is null;
 select sum(purchase_amt) from order2;
 
 #13. Find the third highest grade for each of the cities of the customers.
+SELECT city,MAX(grade) from customer where grade < (select MAX(grade) from customer where grade < (select MAX(grade) from customer )) group by city;
 
-select * from  customer where grade = (select max(grade) from customer );
 
+#14.Find the second lowest purchase amount ordered by each customer 
+#  with their ID and lowest purchase amount.
+select MIN(purchase_amt) as lowest_purch_amt,customer_id from order2 where purchase_amt not in
+(select MIN(purchase_amt) from order2) group by customer_id;
+
+#15. Find the highest purchase amount ordered by the each customer on a 
+#    particular date with their ID, order date and highest purchase amount.
+
+select customer_id, order_date ,MAX(purchase_amt) as highest_purch_amt from order2 group by customer_id, order_date; 
+
+
+# 16. Find the highest purchase amount with their customer ID and order 
+#date, for only those customers who have the highest purchase amount 
+#in a day is more than 2000
+
+select customer_id,order_date,max(purchase_amt)from order2 group by customer_id,order_date having max(purchase_amt)>2000;
 
