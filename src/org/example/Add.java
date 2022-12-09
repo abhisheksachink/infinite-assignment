@@ -7,6 +7,7 @@ public class Add {
         int num2=3;
         int result=num1+num2;
         System.out.println("the sum is "+result);
+
     }
     public int getSum(int a, int b){
         int num1=a;
